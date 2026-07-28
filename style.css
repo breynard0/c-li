@@ -3,6 +3,7 @@
     line-height: 1.2em;
     background: #111112;
     color: whitesmoke;
+    overflow-x: clip;
 }
 
 body {
@@ -36,11 +37,11 @@ body {
 }
 
 .fill_in_text {
-    width: min(92vw, 800px);
+    width: min(90vw, 800px);
 }
 
 .block_div {
-    width: min(92vw, 800px);
+    width: min(90vw, 800px);
 }
 
 #countdown {
@@ -57,4 +58,21 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -1;
+}
+
+#logo_img {
+    max-width: 95%;
+    height: auto;
+    /*Wipe in using clip path*/
+    animation: 0.5s linear 0s 1 wipeIn;
+    animation-play-state: paused;
+}
+
+@keyframes wipeIn {
+    0% {
+        clip-path: xywh(0 0 0% 100%);
+    }
+    100% {
+        clip-path: xywh(0 0 100% 100%);
+    }
 }

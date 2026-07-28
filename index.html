@@ -6,13 +6,13 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
           rel="stylesheet">
     <meta charset="UTF-8">
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet"/>
+    <link rel="icon" type="image/svg" href="/logo-2.svg"/>
     <title>C-LI</title>
 </head>
 <body>
 <main>
-<!--    <canvas id="bg_canvas"></canvas> -->
     <div class="greeter_box">
         <p id="green_arrow">></p>
         <div>
@@ -39,7 +39,8 @@
         </div>
         <div class="block_div">
             <h3 class="fill_in_text" text="What prizes can I get?"></h3>
-            <p class="fill_in_text" text="After submitting your project, you may pick from one of the following terminal-related games:"></p>
+            <p class="fill_in_text"
+               text="After submitting your project, you may pick from one of the following terminal-related games:"></p>
             <p class="fill_in_text" text="- Hacknet"></p>
             <p class="fill_in_text" text="- TIS-100"></p>
             <p class="fill_in_text" text="- MOLEK-SYNTEZ"></p>
@@ -48,9 +49,16 @@
             <p class="fill_in_text" text="Got another terminal-related game? Propose it in #c-li!"></p>
         </div>
         <div class="block_div">
-            <h3 class="fill_in_text" text="AI Policy"></h3>
-            <p class="fill_in_text" text="Given the small scope and technical nature of this program, no AI-generated code will be permitted."></p>
-            <p class="fill_in_text" text="You may still use AI as a glorified search engine, but you should type out all code yourself."></p>
+            <h3 class="fill_in_text" text="AI Policy and Quality Guidelines"></h3>
+            <p class="fill_in_text"
+               text="Given the small scope and technical nature of this program, no AI-generated code will be permitted."></p>
+            <p class="fill_in_text"
+               text="You may still use AI as a glorified search engine, but you should type out all code yourself."></p>
+            <p class="fill_in_text"
+               text="C-LI has quality requirements rather than strict hour ones. 
+               You'll certainly be spending at least an hour or two in order to 
+               build something that shows the best of your abilities, but feel 
+               free to take as much time as you need to polish your project into something you're truly proud of!"></p>
         </div>
         <div class="block_div">
             <h3 class="fill_in_text" text="I don't know what to make!"></h3>
@@ -63,34 +71,16 @@
         </div>
         <div class="block_div">
             <h3 class="fill_in_text" text="How do I submit?"></h3>
-            <p class="fill_in_text" text="Wish I knew"></p>
+            <p class="fill_in_text" text="When you're done, complete this form here!"></p>
+            <p class="fill_in_text" text="You will be contacted through Slack in order to fulfill your prize."></p>
+            <p class="fill_in_text"
+               text="As a 501(c)(3) nonprofit, Hack Club must collect your address in order to comply with US anti-terrorism laws."></p>
         </div>
-        <div id="ascii_div" class="block_div">
-            <!--//@formatter:off-->
-            <p class="ascii_art_makeup fill_in_text" text=" "></p>
-            <p class="ascii_art_makeup fill_in_text" text=" "></p>
-            <p class="ascii_art_makeup fill_in_text" text="        XXXXXXXXXXXXXXXX                                  "></p>
-            <p class="ascii_art_makeup fill_in_text" text="     XXXXXXXXXXXXXXXXXXX  XXXX                            "></p>
-            <p class="ascii_art_makeup fill_in_text" text="   XXXXXXXXXXXXXXXXXXX    XXXXXXX                         "></p>
-            <p class="ascii_art_makeup fill_in_text" text=" XXXXXXXXXXXXXXXX       XXXXXXXXX                         "></p>
-            <p class="ascii_art_makeup fill_in_text" text="XXXXXXXXX              XXXXXXXXX                          "></p>
-            <p class="ascii_art_makeup fill_in_text" text="XXXXXX                  XXXXXXXX         XXXX             "></p>
-            <p class="ascii_art_makeup fill_in_text" text="XXXXX     XXXXXXXXX    XXXXXXXX         XXXXXXX           "></p>
-            <p class="ascii_art_makeup fill_in_text" text="XXXXXX    XXXXXXXXX   XXXXXXXX         XXXXXXXXXXXX       "></p>
-            <p class="ascii_art_makeup fill_in_text" text="XXXXXX    XXXXXXXXX  XXXXXXXX              XXXXXXXXXX     "></p>
-            <p class="ascii_art_makeup fill_in_text" text="XXXXXX            XXXXXXXXXXXX            XXXXXXXXXXXXXX  "></p>
-            <p class="ascii_art_makeup fill_in_text" text=" XXXXXXXX          XXXXXXXXXXXXXX           XXXXXXXXXXXXXX"></p>
-            <p class="ascii_art_makeup fill_in_text" text=" XXXXXXXXXXX        XXXXXXXXXXXXX         XXXXX     XXXX  "></p>
-            <p class="ascii_art_makeup fill_in_text" text="  XXXXXXXXXXXXXXXXX      XXXXXXXX   XXX   XXXXX           "></p>
-            <p class="ascii_art_makeup fill_in_text" text="  XXXXXXXXXXXXXXXXXXXXX      XXX  XXXXXXXXXXX             "></p>
-            <p class="ascii_art_makeup fill_in_text" text="   XXXXXXXXXXXXXXXXXXXXX         XXXXXXXXXXX              "></p>
-            <p class="ascii_art_makeup fill_in_text" text="     XXXXXXXXXXXXXXXXXX            XXXXXXXXXXX            "></p>
-            <p class="ascii_art_makeup fill_in_text" text="        XXXXXXXXXXXXXXXX               XXXXXXXX           "></p>
-            <p class="ascii_art_makeup fill_in_text" text="              XXXXXXX A Hack Club Program XXXX            "></p>
-            <!--//@formatter:on-->
+        <div class="block_div">
+            <img id="logo_img" src="logo.svg" alt="C-LI Logo"/>
         </div>
     </div>
-    
+
     <p id="countdown">
         00:00:00:00
     </p>

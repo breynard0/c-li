@@ -9,6 +9,7 @@ let main_content_open = false;
 
 const replace_dictionary = {
     "#c-li": "<a href=\"https://hackclub.enterprise.slack.com/archives/C0BL66JKRUJ\">#c-li</a>",
+    "this form here": "<a href=\"https://forms.hackclub.com/c-li-submission\">this form here</a>",
     "Hacknet": "<a href=\"https://store.steampowered.com/app/365450/Hacknet\">Hacknet</a>",
     "TIS-100": "<a href=\"https://store.steampowered.com/app/370360/TIS100/\">TIS100</a>",
     "MOLEK-SYNTEZ": "<a href=\"https://store.steampowered.com/app/1168880/MOLEKSYNTEZ/\">MOLEK-SYNTEZ</a>",
@@ -16,7 +17,7 @@ const replace_dictionary = {
     "Duskers": "<a href=\"https://store.steampowered.com/app/254320/Duskers\">Duskers</a>",
 }
 
-const end_timestamp = Date.UTC(2026, 6, 30, 14, 0, 0, 0)
+const end_timestamp = Date.UTC(2026, 6, 30, 20, 0, 0, 0)
 let countdown_element = document.getElementById("countdown");
 setInterval(() => {
     let time = end_timestamp - Date.now();
@@ -24,7 +25,7 @@ setInterval(() => {
     let hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((time % (1000 * 60)) / 1000);
-    countdown_element.innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    countdown_element.innerText = `${days}d ${hours}h ${minutes}m ${seconds}s left!`;
 });
 
 let len = 0;
@@ -79,6 +80,7 @@ ontouchstart = (_ => {
 function start_main_content_fade_in() {
     if (!main_content_open) {
         let collection = document.getElementsByClassName("fill_in_text");
+        document.getElementById("logo_img").style.animationPlayState = 'running';
         for (let i = 0; i < collection.length; i++) {
             let element = collection[i];
             let len = 0;
@@ -98,22 +100,9 @@ function start_main_content_fade_in() {
     }
 }
 
-const bg_canvas = document.getElementById("bg_canvas");
-const ctx = bg_canvas.getContext("2d");
-
-function draw() {
-    bg_canvas.width = window.innerWidth;
-    bg_canvas.height = window.innerHeight;
-    ctx.fillStyle = "#ff0000";
-    ctx.fillRect(0, 0, bg_canvas.width, bg_canvas.height);
-}
-
-draw();
-
 let ascii_div = document.getElementById("ascii_div");
 
 function resizeHandler() {
-    draw();
     let font_size = 14;
     let width = window.innerWidth;
     console.log(ascii_div.children[0].scrollWidth);
