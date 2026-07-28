@@ -1,0 +1,60 @@
+* {
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.2em;
+    background: #111112;
+    color: whitesmoke;
+}
+
+body {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.greeter_box {
+    display: flex;
+}
+
+#green_arrow {
+    color: lawngreen;
+    margin-right: 10px;
+}
+
+.ascii_art_makeup {
+    font-size: 14px;
+    white-space: pre;
+    background-color: transparent;
+    color: lawngreen;
+    line-height: 0.3em;
+}
+
+#main_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    gap: 1rem;
+    margin-left: 1.3rem;
+}
+
+.fill_in_text {
+    width: min(92vw, 800px);
+}
+
+.block_div {
+    width: min(92vw, 800px);
+}
+
+#countdown {
+    color: lawngreen;
+    position: fixed;
+    bottom: 4px;
+    right: 4px;
+}
+
+#bg_canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
