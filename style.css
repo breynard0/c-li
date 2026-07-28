@@ -41,6 +41,13 @@
 
 #countdown {
     color: lawngreen;
+    background-color: #222223;
+    border-width: 1px;
+    padding: 4px;
+    border-color: #444445;
+    border-style: groove;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #222223;
     position: fixed;
     bottom: 4px;
     right: 4px;
