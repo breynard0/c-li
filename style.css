@@ -6,11 +6,6 @@
     overflow-x: clip;
 }
 
-body {
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
-
 .greeter_box {
     display: flex;
 }

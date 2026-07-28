@@ -99,18 +99,3 @@ function start_main_content_fade_in() {
         main_content_open = true;
     }
 }
-
-let ascii_div = document.getElementById("ascii_div");
-
-function resizeHandler() {
-    let font_size = 14;
-    let width = window.innerWidth;
-    console.log(ascii_div.children[0].scrollWidth);
-    while (ascii_div.offsetWidth > width) {
-        font_size--;
-        ascii_div.style.fontSize = `${font_size}px`;
-    }
-}
-
-window.addEventListener("resize", resizeHandler);
- 
