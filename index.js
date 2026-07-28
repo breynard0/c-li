@@ -9,7 +9,7 @@ let main_content_open = false;
 
 const replace_dictionary = {
     "#c-li": "<a href=\"https://hackclub.enterprise.slack.com/archives/C0BL66JKRUJ\">#c-li</a>",
-    "this form here": "<a href=\"https://forms.hackclub.com/c-li-submission\">this form here</a>",
+    "this form here": "<a href=\"https://forms.hackclub.com/c-li-submission\" style='color: lawngreen'>this form here</a>",
     "Hacknet": "<a href=\"https://store.steampowered.com/app/365450/Hacknet\">Hacknet</a>",
     "TIS-100": "<a href=\"https://store.steampowered.com/app/370360/TIS100/\">TIS100</a>",
     "MOLEK-SYNTEZ": "<a href=\"https://store.steampowered.com/app/1168880/MOLEKSYNTEZ/\">MOLEK-SYNTEZ</a>",
@@ -32,6 +32,7 @@ let len = 0;
 const tick_interval = setInterval(() => {
     if (len >= initial_text.length + blink_text.length) {
         intro_completed = true;
+        document.getElementById("name_container").style.animationPlayState = 'running';
         clearInterval(tick_interval);
     }
     initial_container.innerText = initial_text.slice(0, len);
@@ -81,6 +82,7 @@ function start_main_content_fade_in() {
     if (!main_content_open) {
         let collection = document.getElementsByClassName("fill_in_text");
         document.getElementById("logo_img").style.animationPlayState = 'running';
+        document.getElementById("legal_stuff").style.animationPlayState = 'running';
         for (let i = 0; i < collection.length; i++) {
             let element = collection[i];
             let len = 0;

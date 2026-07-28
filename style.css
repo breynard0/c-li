@@ -70,6 +70,20 @@
     animation-play-state: paused;
 }
 
+#legal_stuff {
+    animation: 0.5s linear 0s 1 wipeIn;
+    animation-play-state: paused;
+}
+
+#name_container {
+    animation: 0.5s linear 0s 1 wipeIn;
+    animation-play-state: paused;
+}
+
+.name_container_text_styling {
+    color: #666667;
+}
+
 @keyframes wipeIn {
     0% {
         clip-path: xywh(0 0 0% 100%);
