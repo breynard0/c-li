@@ -15,6 +15,7 @@ const replace_dictionary = {
     "MOLEK-SYNTEZ": "<a href=\"https://store.steampowered.com/app/1168880/MOLEKSYNTEZ/\">MOLEK-SYNTEZ</a>",
     "Move Code Lines": "<a href=\"https://store.steampowered.com/app/1300310/Move_Code_Lines/\">Move Code Lines</a>",
     "Duskers": "<a href=\"https://store.steampowered.com/app/254320/Duskers\">Duskers</a>",
+    "Grey Hack": "<a href=\"https://store.steampowered.com/app/605230/Grey_Hack/\">Grey Hack</a>",
 }
 
 const end_timestamp = Date.UTC(2026, 6, 30, 20, 0, 0, 0)
