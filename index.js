@@ -14,8 +14,8 @@ const replace_dictionary = {
     "TIS-100": "<a href=\"https://store.steampowered.com/app/370360/TIS100/\">TIS100</a>",
     "MOLEK-SYNTEZ": "<a href=\"https://store.steampowered.com/app/1168880/MOLEKSYNTEZ/\">MOLEK-SYNTEZ</a>",
     "Move Code Lines": "<a href=\"https://store.steampowered.com/app/1300310/Move_Code_Lines/\">Move Code Lines</a>",
-    "Duskers": "<a href=\"https://store.steampowered.com/app/254320/Duskers\">Duskers</a>",
     "Grey Hack": "<a href=\"https://store.steampowered.com/app/605230/Grey_Hack/\">Grey Hack</a>",
+    "Duskers": "<a href=\"https://store.steampowered.com/app/254320/Duskers\">Duskers</a>",
 }
 
 const end_timestamp = Date.UTC(2026, 6, 30, 20, 0, 0, 0)
