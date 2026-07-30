@@ -18,17 +18,6 @@ const replace_dictionary = {
     "Duskers": "<a href=\"https://store.steampowered.com/app/254320/Duskers\">Duskers</a>",
 }
 
-const end_timestamp = Date.UTC(2026, 6, 30, 20, 0, 0, 0)
-let countdown_element = document.getElementById("countdown");
-setInterval(() => {
-    let time = end_timestamp - Date.now();
-    let days = Math.floor(time / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((time % (1000 * 60)) / 1000);
-    // countdown_element.innerText = `${days}d ${hours}h ${minutes}m ${seconds}s left!`;
-});
-
 let len = 0;
 const tick_interval = setInterval(() => {
     if (len >= initial_text.length + blink_text.length) {
